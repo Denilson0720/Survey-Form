@@ -1,0 +1,50 @@
+body{
+    background-color:lightseagreen
+}
+h1{
+    
+    text-align: center;
+    margin:0;
+}
+p{
+    margin:0;
+    text-align: center;
+    
+}
+form{
+    width:60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin:0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+fieldset{
+    border:none;
+    padding: 2rem 0;
+    border-bottom: 3px solid black;
+    
+}
+label{
+    display:block;
+    padding:0.5rem 0;
+}
+textarea{
+    margin:0 auto; 
+}
+input,textarea,select{
+    background-color: darkcyan;
+    color:black;
+    
+}
+::placeholder{
+    color:black;
+}
+input[type="submit"]{
+    display:block;
+    width:60%;
+    margin:1em auto;
+    height: 2em;
+    font-size:1.1rem;
+    border-color: black;
+    min-width: 300px;
+}

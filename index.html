@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Satisfaction Survey</title>
+    </head>
+    <body>
+    <form id="survey-form">
+        <h1 id="title">Satisfaction Survey</h1>
+        <p id="description">Please fill out all fields to submit survey.</p>
+        <!--Fieldset #1 -->
+        <fieldset>
+            <label for="name">Enter Your First Name: <input id="name" type="text" placeholder="John Doe" required/></label>
+            <label for="email">Email: <input id="email" type="email" placeholder="JohnDoe@email.com" required/></label>
+            <label for="number">Enter Your Age: <input id="number" type="number" min="18" max="50" placeholder="21" required/></label>
+            <label for="dropdown">Please Select Your Gender:
+                <select id="dropdown">
+                    <option value="select">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <!--Fieldset #2 -->
+        <fieldset>
+            <p>Would you recommend us to a friend or family member after your recent experience with us?</p>
+            <label for="definitely"><input id="definitely" type="radio" name="reccomendation-choice" value="Definitely"/>Definitely</label>
+            <label for="maybe"><input id="maybe" type="radio" name="reccomendation-choice" value="Maybe"/>Maybe</label>
+            <label for="no"><input id="no" type="radio" name="reccomendation-choice" value="No"/>No</label>
+        </fieldset>
+
+         <!--Fieldset #3 -->
+         <fieldset>
+            <label for="comments">
+                <p>Please use this space to tell us anything you liked about your experience with us and/or what we can improve on.</p>
+                <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I found my experience with Google to be..."></textarea>
+            </label>
+         </fieldset>
+           
+        <!--Fieldset #4 -->
+        <fieldset>
+            <p>Please select all that apply to you: </p>
+            <label for="hispanic-choice"><input id="hispanic-choice" type="checkbox" name="ethnicity" value="Hispanic"/>Hispanic</label>
+            <label for="white-choice"><input id="white-choice" type="checkbox" name="ethnicity" value="White"/>White</label>
+            <label for="black-choice"><input id="black-choice" type="checkbox" name="ethnicity" value="Black"/>Black or African American</label>
+            <label for="asian-choice"><input id="asian-choice" type="checkbox" name="ethnicity" value="Asian"/>Asian</label>
+            <label for="native-hawaiian-choice"><input id="native-hawaiian-choice" type="checkbox" name="ethnicity" value="Native"/>Native Hawaiian or Pacific Islander</label>
+
+        </fieldset>
+        <!--Submit -->
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+    </body>
+</html>
